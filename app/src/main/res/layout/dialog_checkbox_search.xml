@@ -22,7 +22,7 @@
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
                 android:gravity="center"
-                android:background="@drawable/button_dialog_main"
+                //android:background="@drawable/button_dialog_main"
                 android:clickable="true"
                 android:focusable="true"
                 android:padding="@dimen/vs_20"
@@ -37,7 +37,7 @@
                 android:layout_gravity="center"
                 android:gravity="center"
                 android:layout_marginLeft="@dimen/vs_0"
-                android:background="@drawable/button_dialog_main"
+                //android:background="@drawable/button_dialog_main"
                 android:clickable="true"
                 android:focusable="true"
                 android:padding="@dimen/vs_20"
@@ -62,7 +62,12 @@
             app:tv_horizontalSpacingWithMargins="@dimen/vs_10"
             app:tv_verticalSpacingWithMargins="@dimen/vs_10"
             android:orientation="vertical"/>
-
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/vs_15"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/mGridView" />
     </LinearLayout>
 
 </FrameLayout>
