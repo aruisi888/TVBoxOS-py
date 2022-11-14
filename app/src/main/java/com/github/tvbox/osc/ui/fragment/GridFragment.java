@@ -32,7 +32,6 @@ import com.owen.tvrecyclerview.widget.V7LinearLayoutManager;
 import java.util.Stack;
 import android.view.ViewGroup;
 import android.widget.Toast;
-
 import org.greenrobot.eventbus.EventBus;
 
 /**
@@ -51,6 +50,7 @@ public class GridFragment extends BaseLazyFragment {
     private boolean isLoad = false;
     private boolean isTop = true;
     private View focusedView = null;
+    private String default_sourceKey = null;
     private class GridInfo{
         public String sortID="";
         public TvRecyclerView mGridView;
@@ -63,7 +63,14 @@ public class GridFragment extends BaseLazyFragment {
     Stack<GridInfo> mGrids = new Stack<GridInfo>(); //ui栈
 
     public static GridFragment newInstance(MovieSort.SortData sortData) {
-        return new GridFragment().setArguments(sortData);
+        return new GridFragment(null).setArguments(sortData);
+    }
+    public static GridFragment newInstance(MovieSort.SortData sortData, String sourceKey) {
+        return new GridFragment(sourceKey).setArguments(sortData);
+    }
+    public GridFragment(String sourceKey) {
+        this.default_sourceKey = sourceKey;
+
     }
 
     public GridFragment setArguments(MovieSort.SortData sortData) {
@@ -164,7 +171,7 @@ public class GridFragment extends BaseLazyFragment {
             @Override
             public void onLoadMoreRequested() {
                 gridAdapter.setEnableLoadMore(true);
-                sourceViewModel.getList(sortData, page);
+                sourceViewModel.getList(sortData, page, default_sourceKey);
             }
         }, mGridView);
         mGridView.setOnItemListener(new TvRecyclerView.OnItemListener() {
@@ -291,7 +298,7 @@ public class GridFragment extends BaseLazyFragment {
         isLoad = false;
         scrollTop();
         toggleFilterColor();
-        sourceViewModel.getList(sortData, page);
+        sourceViewModel.getList(sortData, page, default_sourceKey);
     }
 
     private void toggleFilterColor() {
