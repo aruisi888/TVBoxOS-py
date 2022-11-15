@@ -21,3 +21,6 @@ body {
   box-sizing: border-box;
   z-index: 1;
 }
+.size {
+	 transform: scale(0.8,0.8);
+}
