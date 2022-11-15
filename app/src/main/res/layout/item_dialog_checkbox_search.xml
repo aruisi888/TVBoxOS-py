@@ -9,6 +9,8 @@
         android:layout_height="wrap_content">
         <CheckBox
             android:id="@+id/oneSearchSource"
+            android:scaleX="0.6"
+            android:scaleY="0.6"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:background="@drawable/button_dialog_main"
