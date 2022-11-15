@@ -1,9 +1,4 @@
 <?xml version="1.0" encoding="utf-8"?>
-<checkbox-group bindchange="checkboxChange">
-	<view class="checkbox" wx:for="{{items}}">
-	    <checkbox value="{{item.name}}" checked="{{item.checked}}" class="size" />{{item.value}}
-	  </view>
-</checkbox-group>
 <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
