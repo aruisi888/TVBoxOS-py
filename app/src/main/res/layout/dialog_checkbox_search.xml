@@ -48,8 +48,6 @@
 
         <com.owen.tvrecyclerview.widget.TvRecyclerView
             android:id="@+id/mGridView"
-            android:scaleX="0.6"
-            android:scaleY="0.6"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:paddingLeft="@dimen/vs_10"
