@@ -1279,10 +1279,10 @@ input.weui-btn_mini {
   mask-image: url(data:image/svg+xml,%3Csvg%20width%3D%2224%22%20height%3D%2224%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%3Cpath%20d%3D%22M8.657%2018.435L3%2012.778l1.414-1.414%204.95%204.95L20.678%205l1.414%201.414-12.02%2012.021a1%201%200%2001-1.415%200z%22%20fill-rule%3D%22evenodd%22%2F%3E%3C%2Fsvg%3E);
 }
 .weui-cells_checkbox .weui-check__label:before {
-  left: 55px;
+  left: 35px;
 }
 .weui-cells_checkbox .weui-cell__hd {
-  padding-right: 16px;
+  padding-right: 10px;
   font-size: 0;
 }
 .weui-cells_checkbox .weui-icon-checked {
@@ -2661,8 +2661,8 @@ page {
   min-height: 1.88235294em;
 }
 .weui-cells__group_form .weui-cells_checkbox .weui-check__label:before {
-  left: 56px;
-  left: calc(40px + var(--weui-cellPaddingLR));
+  left: 36px;
+  left: calc(20px + var(--weui-cellPaddingLR));
 }
 .weui-cells__group_form .weui-cell_select {
   padding: 0;
@@ -4725,22 +4725,22 @@ body[data-weui-theme="dark"] .weui-picker__mask {
   mask-position: 0 0;
   -webkit-mask-repeat: no-repeat;
   mask-repeat: no-repeat;
-  -webkit-mask-size: 100%;
-  mask-size: 100%;
+  -webkit-mask-size: 50%;
+  mask-size: 50%;
   -webkit-mask-image: url(data:image/svg+xml,%3Csvg%20width%3D%221000%22%20height%3D%221000%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%3Cpath%20d%3D%22M500%20916.667C269.881%20916.667%2083.333%20730.119%2083.333%20500%2083.333%20269.881%20269.881%2083.333%20500%2083.333c230.119%200%20416.667%20186.548%20416.667%20416.667%200%20230.119-186.548%20416.667-416.667%20416.667zm0-50c202.504%200%20366.667-164.163%20366.667-366.667%200-202.504-164.163-366.667-366.667-366.667-202.504%200-366.667%20164.163-366.667%20366.667%200%20202.504%20164.163%20366.667%20366.667%20366.667z%22%20fill-rule%3D%22evenodd%22%20fill-opacity%3D%22.9%22%2F%3E%3C%2Fsvg%3E);
   mask-image: url(data:image/svg+xml,%3Csvg%20width%3D%221000%22%20height%3D%221000%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%3Cpath%20d%3D%22M500%20916.667C269.881%20916.667%2083.333%20730.119%2083.333%20500%2083.333%20269.881%20269.881%2083.333%20500%2083.333c230.119%200%20416.667%20186.548%20416.667%20416.667%200%20230.119-186.548%20416.667-416.667%20416.667zm0-50c202.504%200%20366.667-164.163%20366.667-366.667%200-202.504-164.163-366.667-366.667-366.667-202.504%200-366.667%20164.163-366.667%20366.667%200%20202.504%20164.163%20366.667%20366.667%20366.667z%22%20fill-rule%3D%22evenodd%22%20fill-opacity%3D%22.9%22%2F%3E%3C%2Fsvg%3E);
   color: rgba(0, 0, 0, 0.3);
   color: var(--weui-FG-2);
-  width: 1em;
-  height: 1em;
-  font-size: 17px;
-  margin-top: -0.2em;
+  width: 0.5em;
+  height: 0.5em;
+  font-size: 10px;
+  margin-top: -0.1em;
 }
 .weui-agree__checkbox-check {
   opacity: 0;
   position: absolute;
-  width: 1px;
-  height: 1px;
+  width: 0.5px;
+  height: 0.5px;
   overflow: hidden;
 }
 .weui-agree__checkbox-check[aria-checked="true"] + .weui-agree__checkbox,
