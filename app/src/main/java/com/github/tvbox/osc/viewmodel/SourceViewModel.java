@@ -233,8 +233,8 @@ public class SourceViewModel extends ViewModel {
         }
     }
     // categoryContent
-    public void getList(MovieSort.SortData sortData, int page, String sourceKey) {
-        SourceBean homeSourceBean = TextUtils.isEmpty(sourceKey) ? ApiConfig.get().getHomeSourceBean(): ApiConfig.get().getSource(sourceKey);
+    public void getList(MovieSort.SortData sortData, int page) {
+        SourceBean homeSourceBean = ApiConfig.get().getHomeSourceBean();
         int type = homeSourceBean.getType();
         if (type == 3) {
             spThreadPool.execute(new Runnable() {
